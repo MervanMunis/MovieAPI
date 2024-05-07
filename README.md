@@ -190,4 +190,80 @@ Here is an overview of the API endpoints available in your application, includin
 
 
 ## Usage
-Will be written
+
+Below are examples of how to use the Movie API with Postman. Each section includes a screenshot showing how to interact with the API.
+
+### Uploading File
+
+To upload a file, send a POST request to `/file/upload` with a file attachment. The screenshot below demonstrates how to do this in Postman:
+
+![Uploading File](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/UploadFilePostman.png)
+
+### Finding File
+
+To find and retrieve a file, send a GET request to `/file/{fileName}`. The screenshot below demonstrates how to do this in Postman:
+
+![Finding File](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/FindF%C4%B0lePostman.png)
+
+### Adding Movie
+
+To add a new movie, send a POST request to `/api/v1/movie/add-movie` with the movie details and an image file. The screenshot below demonstrates how to do this in Postman:
+
+![Adding Movie](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/AddMoviePostman.png)
+
+### Finding Movie
+
+To find a specific movie by ID, send a GET request to `/api/v1/movie/{movieId}`. The screenshot below demonstrates how to do this in Postman:
+
+![Finding Movie](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/FindMoviePostman.png)
+
+### Listing All Movies
+
+To list all movies, send a GET request to `/api/v1/movie/all`. The screenshot below demonstrates how to do this in Postman:
+
+![Listing All Movies](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/AllMoviesPostman.png)
+
+### Updating Movie
+
+To update an existing movie by ID, send a PUT request to `/api/v1/movie/update/{movieId}` with the new movie details and an image file. The screenshot below demonstrates how to do this in Postman:
+
+![Updating Movie](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/UpdateMoviePostman.png)
+
+### Deleting Movie
+
+To delete a movie by ID, send a DELETE request to `/api/v1/movie/delete/{movieId}`. The screenshot below demonstrates how to do this in Postman:
+
+![Deleting Movie](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/DeleteMoviePostman.png)
+
+### Pagination of Movies
+
+To retrieve movies with pagination, send a GET request to `/api/v1/movie/allMoviesPage` with `pageNumber` and `pageSize` parameters. The screenshot below demonstrates how to do this in Postman:
+
+![Pagination of Movies](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/PaginationMoviePostman.png)
+
+### Pagination and Sorting of Movies
+
+To retrieve movies with pagination and sorting, send a GET request to `/api/v1/movie/allMoviesPageSort` with parameters such as `pageNumber`, `pageSize`, `sortBy`, and `dir`. The screenshot below demonstrates how to do this in Postman:
+
+![Pagination and Sorting of Movies](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/PaginationAndSortingMoviesPostman.png)
+
+### Registering a User
+
+To register a new user, send a POST request to `/api/v1/auth/register` with user details. The screenshot below demonstrates how to do this in Postman:
+
+![Registering a User](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/RegisterPostman.png)
+
+### Logging in a User
+
+To log in a user, send a POST request to `/api/v1/auth/login` with login credentials. The screenshot below demonstrates how to do this in Postman:
+
+![Logging in a User](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/LoginPostman.png)
+
+### Refreshing a Token
+
+To refresh an authentication token, send a POST request to `/api/v1/auth/refresh` with a refresh token. The screenshot below demonstrates how to do this in Postman:
+
+![Refreshing a Token](https://github.com/MervanMunis/MovieAPI/blob/master/Usage/RefreshTokenPostman.png)
+
+These examples should help users understand how to use your API endpoints effectively. Let me know if you need further assistance with the Usage section.
+

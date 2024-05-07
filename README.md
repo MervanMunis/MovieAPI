@@ -1,4 +1,4 @@
-<h1>Movie API</h1>
+# <div align="center">Movie API</div>
 
 ## Table of Contents
 
